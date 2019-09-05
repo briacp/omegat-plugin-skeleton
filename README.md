@@ -5,14 +5,14 @@
 It is recommended to checkout a squashed history of skeleton.
 
 ```
-$ mkdir myproject; cd myproject
-$ git init
-$ git remote add skeleton https://github.com/omegat-org/plugin-skeleton.git
-$ git fetch skeleton
-$ git checkout -b master skeleton/squashed
-$ git remote remove skeleton
-$ git remote add origin https://where.your/project/repository
-$ git push -u origin master
+mkdir myproject; cd myproject
+git init
+git remote add skeleton https://github.com/briacp/omegat-plugin-skeleton.git
+git fetch skeleton
+git checkout -b master skeleton/squashed
+git remote remove skeleton
+git remote add origin https://where.your/project/repository
+git push -u origin master
 ```
 
 

@@ -5,7 +5,7 @@ plugins {
     id 'distribution'
     id 'maven'
     id 'idea'
-	id 'eclipse'
+    id 'eclipse'
 }
 
 repositories {
@@ -31,11 +31,11 @@ dependencies {
 
     compileDependencies.each {
         compileOnly it
-        testImplementation it
+        //testImplementation it
     }
 
     testDependencies.each {
-        testImplementation it
+        //testImplementation it
     }
 }
 
@@ -103,3 +103,12 @@ distributions {
         }
     }
 }
+
+
+task installPlugin(type: Copy) {
+        from 'build/install/omegat-plugin-fake-mt/plugin'
+        into omegatPluginDir
+        include('*.jar')
+}
+
+installPlugin.dependsOn installDist

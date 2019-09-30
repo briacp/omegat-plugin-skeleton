@@ -10,5 +10,3 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 ### Fixed
-
-[Unreleased]: https://github.com/miurahr/omegat-plugin-skelton/compare/v0.1...HEAD

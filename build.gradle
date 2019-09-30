@@ -106,7 +106,7 @@ distributions {
 
 
 task installPlugin(type: Copy) {
-        from 'build/install/omegat-plugin-fake-mt/plugin'
+        from 'build/libs/'
         into omegatPluginDir
         include('*.jar')
 }

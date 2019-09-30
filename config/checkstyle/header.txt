@@ -3,7 +3,7 @@
           with fuzzy matching, translation memory, keyword search,
           glossaries, and translation leveraging into updated projects.
 
- Copyright (C) 2016 Hiroshi Miura
+ Copyright (C) 2019 Briac Pilpre
                Home page: http://www.omegat.org/
                Support center: http://groups.yahoo.com/group/OmegaT/
 

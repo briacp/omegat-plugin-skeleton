@@ -19,18 +19,19 @@ package net.briac.omegat.plugin;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 
 import org.omegat.core.CoreEvents;
 import org.omegat.core.events.IApplicationEventListener;
-import org.omegat.util.Preferences;
 
 public class PluginSkeleton {
     public static final String PLUGIN_NAME = PluginSkeleton.class.getPackage().getImplementationTitle();
     public static final String PLUGIN_VERSION = PluginSkeleton.class.getPackage().getImplementationVersion();
     public static final ResourceBundle RES = ResourceBundle.getBundle("plugin-skeleton", Locale.getDefault());
-    private static final Logger LOGGER = Logger.getLogger(LqePlugin.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(PluginSkeleton.class.getName());
 
     public static void loadPlugins() {
+        LOGGER.info("Loading " + PLUGIN_NAME + " v." + PLUGIN_VERSION + "...");
         //Core.registerFilterClass(clazz);
         //Core.registerMachineTranslationClass(clazz);
         //Core.registerMarker(marker);
